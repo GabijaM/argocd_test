@@ -8,10 +8,10 @@ spec:
   source:
     repoURL: https://github.com/GabijaM/argocd_test.git
     targetRevision: HEAD
-    path: test
+    path: dev
   destination:
     server: https://kubernetes.default.svc
-    namespace: testing-app
+    namespace: myapp
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
